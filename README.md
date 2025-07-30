@@ -1,60 +1,44 @@
-My First Terraform EC2 Project
+this is my "README" My First Terraform EC2 Project
+This project demonstrates how I used Terraform to create a virtual machine (EC2 instance) on AWS. It's part of my learning journey into DevOps and Infrastructure as Code.
 
-Ironhack DevOps & Cloud Computing Bootcamp
-This project demonstrates how I used Terraform to create an EC2 instance on AWS. It’s part of my hands-on practice with Infrastructure as Code (IaC) during my DevOps training at Ironhack.
+and this project is part of my hands-on practice with infrastructure as code.
 
-What You Need
-Before running this project, ensure you have:
+What You Need Before You Begin
+To run this project successfully, make sure you have the following:
 
-Terraform installed on your system.
+Terraform installed on your system
 
-AWS CLI configured with credentials.
+AWS CLI installed and configured
 
-An AWS account (Free Tier works).
+An AWS account with access credentials
 
-Files Overview
-File	Purpose
-main.tf	Defines the EC2 instance (AMI, type, tags).
-providers.tf	Connects Terraform to AWS (us-east-1).
-variables.tf	Declares configurable inputs (e.g., instance_type).
-terraform.tfvars	Sets variable values (override defaults here).
-.gitignore	Excludes sensitive files (e.g., .terraform/, state files).
+Files in This Project
+This project contains several files that work together to create the EC2 instance:
 
-How to Run:
+main.tf: Defines the EC2 instance settings
 
-Initialize Terraform:
+providers.tf: Connects Terraform to AWS
 
-terraform init
+variables.tf: Declares input variables
 
-Preview Changes:
-terraform plan
-Deploy the EC2 Instance:
-terraform apply
-✔️ Type yes to confirm.
+terraform.tfvars: Stores the actual values for the variables
 
-Clean Up (Important!):
+.gitignore: Prevents certain files (like sensitive data) from being tracked in version control
 
-bash
-terraform destroy
-⚠️ Always run this to avoid unexpected AWS charges.
+README.md: Explains what this project is and how to use it
+
+How to Run the Project
+Step 1: Open your terminal and go into the project folder Step 2: Run terraform init to initialize Terraform Step 3: Run terraform plan to see what Terraform will do Step 4: Run terraform apply to create the EC2 instance Step 5: Type yes to confirm Step 6: When done, run terraform destroy to remove the resources and avoid AWS charges
+
+Important Notes
+This project is for learning and personal development
+
+Always destroy resources when you are finished to avoid unnecessary AWS costs
+
+Do not upload sensitive files like your AWS credentials or state files
 
 Why I Built This
-As part of my Ironhack Bootcamp, I wanted to:
-
-Learn Terraform from scratch.
-
-Understand how to automate cloud infrastructure.
-
-Gain confidence using AWS services programmatically.
-
-This project was my first step into DevOps—simple but impactful!
-
-Notes
-Educational Use: Designed for learning, not production.
-
-Security: Never commit secrets (e.g., AWS keys).
-
-Costs: Destroy resources after testing.
+I am currently learning DevOps and wanted to understand how to write code that creates infrastructure. This project helped me take my first step in using Terraform to automate resource creation in the cloud. It gave me real-world experience and helped me understand how the different configuration files work together.
 
 License
-Feel free to use this project to learn or practice.
+You can use this project to learn and practice.
